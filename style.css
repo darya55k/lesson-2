@@ -1,0 +1,224 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background-color: #eee;
+    background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+
+.header-title {
+    font-size: 140px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+}
+
+.content {
+    font-size: 0;
+
+    width: 790px;
+    margin: 0 auto;
+}
+
+
+.card {
+    width: 350px;
+
+    margin-bottom: 60px;
+    padding: 45px 45px 70px;
+
+    display: inline-block;
+    margin-right: 90px;
+    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+
+.no-right-margin {
+    margin-right: 0;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.card-image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.footer {
+    height: 300px;
+    background-color: black;
+    display: flex;
+
+}
+
+.footer-author {
+    color: white;
+    font-size: 24px;
+    margin: auto;
+}
+
+.iframe {
+    min-height: 500px;
+
+}
+
+.iframe__title {
+    font-family: "Helvetica", sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-bottom: 32px;
+}
+
+.iframe__music,
+.iframe__books,
+.iframe__map,
+.iframe__social {
+    padding-bottom: 100px;
+}
+
+.menu__item {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu__item:last-of-type {
+    margin-right: 0;
+}
+
+.transform {
+    background-color: #000;
+    color: #fff;
+}
+
+.transform__wrapper {
+    width: 490px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.title {
+    margin: 0;
+    line-height: 56px;
+    font-size: 54px;
+}
+
+.subtitle {
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    max-width: 385px;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.demo__item {
+    background-color: #202020;
+    width: 240px;
+    height: 240px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+.demo__icon {
+    margin: auto;
+}
+
+.demo__item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.demo__item:first-of-type,
+.demo__item:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.demo__item:hover {
+    background-color: #02B341;
+}
+
+.demo__item-title {
+    font-size: 24px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+}
+
+.demo__item_type_translate:hover .demo__icon {
+    transform: translate(10px, 0);
+}
+
+.demo__item_type_rotate:hover .demo__icon {
+    transform: rotate(360deg);
+}
+
+.demo__item_type_scale:hover .demo__icon {
+    transform: scale(1.2);
+}
+
+.demo__item_type_skew:hover .demo__icon {
+    transform: skew(20deg, 0);
+}
+
+.demo__item_type_translate .demo__icon {
+    transition: transform 0.4s ease-out;
+}
+
+.demo__item_type_rotate .demo__icon {
+    transition: transform 1.5s ease-out;
+}
+
+.demo__item_type_scale .demo__icon {
+    transition: transform 0.4s ease-in;
+}
+
+.demo__item_type_skew .demo__icon {
+    transition: transform 0.4s ease-in-out;
+}
